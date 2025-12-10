@@ -84,6 +84,15 @@ public class FinishState extends GameState {
             g2.drawString(text, x, y);
         }
 
+        // DRAW MESSSAGE play.again
+        text = messageUtil.getMessage("return.title.screen");
+        g2.setFont(g2.getFont().deriveFont(Font.TYPE1_FONT, 20F));
+        g2.setColor(Color.WHITE);
+        x = gp.getXforCenteredText(text, g2);
+        y = gp.tileSize * 7 + gp.tileSize/2 * gp.winnerPlacement.length;
+        g2.drawString(text, x, y);
+
+
     }
 
     @Override
